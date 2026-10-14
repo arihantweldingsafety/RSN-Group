@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf9f6">
+<meta name="description" content="A festive wish sent with warmth and goodwill.">
+<title>Happy Diwali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--paper:#faf9f6;--gold:#b38a42;--text:#624824}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--paper)}
+body{font-family:"Cormorant Garamond",Georgia,serif;color:var(--text);background:radial-gradient(ellipse at 49% 39%,#fff 0%,var(--paper) 74%)}
+.page{min-height:100svh;display:grid;place-items:center;overflow:hidden;position:relative;padding:38px 16px 49px;isolation:isolate}
+.page:before,.page:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #d9bf8d79;border-radius:50%;z-index:-1;pointer-events:none}
+.page:before{top:-300px;left:-310px;box-shadow:24px 24px 0 -23px #cdb48470,51px 51px 0 -50px #cdb48470}
+.page:after{bottom:-321px;right:-314px;box-shadow:-25px -25px 0 -24px #cdb48470,-51px -51px 0 -50px #cdb48470}
+.content{text-align:center;width:min(100%,540px)}
+.diya{display:block;margin:0 auto 24px;color:var(--gold);width:108px;height:108px}
+.happy{font-size:clamp(54px,10vw,73px);letter-spacing:.045em;font-weight:400;line-height:.95;color:#96723b;margin:0}
+.diwali{font-family:"Great Vibes","Brush Script MT",cursive;font-weight:400;font-size:clamp(91px,20vw,141px);line-height:1.12;color:var(--gold);margin:0 0 8px}
+.wish{font-size:clamp(21px,4.4vw,27px);letter-spacing:.07em;line-height:1.25;margin:0}
+.divider{display:flex;justify-content:center;align-items:center;gap:20px;margin:26px auto 28px}
+.divider:before,.divider:after{content:"";height:1px;width:85px;background:#d6bd8b}
+.divider span{width:8px;height:8px;border:1px solid #bd964e;transform:rotate(45deg)}
+.prompt{font-size:clamp(24px,4.8vw,32px);letter-spacing:.04em;margin:0 0 26px}
+.qr{display:block;cursor:pointer;width:199px;height:199px;padding:10px;margin:0 auto;border:1px solid #cbaa6a;border-radius:12px;background:#fff;color:inherit}
+.qr:focus-visible{outline:3px solid #8b6526;outline-offset:4px}
+.qr svg{width:100%;height:100%;display:block}
+@media(max-width:420px){.page{padding-top:28px;padding-bottom:36px}.diya{width:100px;height:100px;margin-bottom:20px}.diwali{margin-bottom:10px}.divider{margin:24px auto}.qr{width:188px;height:188px}}
+@media(max-height:740px){.page{padding-top:20px;padding-bottom:20px}.diya{width:75px;height:75px;margin-bottom:12px}.happy{font-size:52px}.diwali{font-size:86px}.divider{margin:14px auto}.prompt{margin-bottom:15px}.qr{width:165px;height:165px}}
+</style>
+</head>
+<body>
+<main class="page">
+<div class="content">
+<svg class="diya" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Gold diya">
+<path d="M55 8C50 19 46 25 46 34a9 9 0 0 0 18 0c0-9-4-15-9-26Z M55 23c-3 6-4 11-3 13 M11 61c5 20 21 34 44 34s39-14 44-34c-22 11-66 11-88 0Z M14 61q41 12 82 0 M24 81c15 17 47 17 62 0 M37 96h36 M55 49v7 M30 46l-5-4 M80 46l5-4 M38 27l-3-7 M72 27l3-7 M31 76l5 5 5-5 5 5 10-7 10 7 5-5 5 5 5-5"/>
+</svg>
+<h1 class="happy">Happy</h1>
+<div class="diwali">Diwali</div>
+<p class="wish">A festive wish sent with warmth<br>and goodwill.</p>
+<div class="divider" aria-hidden="true"><span></span></div>
+<p class="prompt">To know your well-wisher,</p>
+<a class="qr" href="./contact.vcf" download="Rahul-Nahata.vcf" aria-label="Download well-wisher contact card">
+<svg viewBox="0 0 53 53" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="Scannable contact QR code">
+<rect width="53" height="53" fill="#fff"/>
+<path id="qr-path" fill="#111"/>
+</svg></a>
+</div>
+</main>
+<script>
+(function(){
+  // Pre-generated QR matrix (vCard 3.0), including a 4-module quiet zone.
+  // This renders locally without depending on a QR API or any remote images.
+  const packed="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/lVJo0v4BBbKFliQQC607DZ0ugF1elFxNdALpyX4Z66AQRkkQYEEA/qqqqqv4AAU8RyBAACCul+mDnAHaUktl9FACZMUOoO8AVg6C0DT0Aq62v7fWYBEMUOnjmwD2BCb3ukAFIaPvv98APLQpZcqYALPMfY25QAY77CowMIAoloh3NpQCf6z/BH8gBxZJFMccAPrlqpPK8AZH20UMRwAb+HvzM/wAegjhLp7AD3XYV/WLABzoi39OMAH9BcEArAAeOSVq8mcAn44P3wLYAAwf+RCngA6CPBAaKADJx4b/3dAAou7Mf8IAPEh22hGYAmuI/zN+AAAQORFpHQD+P3qdWtAEEMTFe8fALoMT+NPoAXT6gT8jcAukOz3nmoBBFlEx1tAD+zDaEIFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==";
+  const binary=atob(packed);
+  const side=53;
+  let path="";
+  for(let y=0;y<side;y++){
+    let x=0;
+    while(x<side){
+      let idx=y*side+x;
+      if((binary.charCodeAt(idx>>3)>>(7-(idx&7)))&1){
+        const start=x;
+        while(x<side){
+          idx=y*side+x;
+          if(!((binary.charCodeAt(idx>>3)>>(7-(idx&7)))&1))break;
+          x++;
+        }
+        path+="M"+start+" "+y+"h"+(x-start)+"v1h-"+(x-start)+"z";
+      }else{x++;}
+    }
+  }
+  document.getElementById("qr-path").setAttribute("d",path);
+})();
+</script>
+</body>
+</html>
