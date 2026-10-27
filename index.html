@@ -1,76 +1,72 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#071e42">
-  <meta name="description" content="Wishing you a joyful Shubh Deepawali.">
-  <meta property="og:title" content="Shubh Deepawali">
-  <meta property="og:description" content="Warm wishes for a beautiful Deepawali.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/assets/diwali-blue-desktop.webp">
-  <title>Shubh Deepawali</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root{--navy:#071f46;--dark:#061834;--gold:#ecc077;--ivory:#fff9eb;}
-    *{box-sizing:border-box}
-    html{background:var(--dark)}
-    body{margin:0;min-height:100svh;background:var(--dark);font-family:'Cormorant Garamond',Georgia,serif}
-    .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;white-space:nowrap;clip-path:inset(50%)}
-    .desktop{min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
-    .artwork{width:min(100vw,150svh,1600px);aspect-ratio:3/2;position:relative;overflow:hidden;background:var(--navy)}
-    .artwork>img{width:100%;height:100%;display:block;object-fit:cover}
-    /* Interactive hit area lies exactly over the Save Contact button in the artwork. */
-    .save-overlay{position:absolute;left:62%;top:57.5%;width:27.7%;height:11.1%;border-radius:50px;display:block;cursor:pointer;touch-action:manipulation}
-    .save-overlay:hover{box-shadow:0 0 25px rgba(255,211,135,.26)}
-    .save-overlay:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 7px #bb8736}
-    .mobile{display:none}
-    @media(max-width:760px){
-      .desktop{display:none}
-      .mobile{display:block;min-height:100svh;background:linear-gradient(170deg,#071a36 10%,#0b2f66 90%);color:var(--ivory);text-align:center}
-      .mobile-photo{position:relative;overflow:hidden;max-height:48svh;background:#a37d53}
-      .mobile-photo img{display:block;width:100%;height:auto;max-height:48svh;object-fit:cover;object-position:center 18%}
-      .mobile-photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:25%;background:linear-gradient(transparent,#071f46);pointer-events:none}
-      .mobile-message{padding:clamp(17px,5vw,25px) 24px 48px;background:linear-gradient(#071f46,#081a38);position:relative}
-      .mobile-message::before{content:"";position:absolute;inset:10px;border:1px solid #c894453d;pointer-events:none}
-      .mobile-diya{margin:0 auto 12px;width:44px;height:44px;display:block;stroke:var(--gold);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-      .shubh{font-size:clamp(42px,12vw,70px);font-weight:400;line-height:.93;color:#fff1d2;margin:0}
-      .deepawali{font-size:clamp(68px,16vw,106px);font-weight:500;line-height:1.04;letter-spacing:-.045em;margin:0 auto 18px;color:var(--gold)}
-      .ornament{display:flex;align-items:center;justify-content:center;gap:13px;margin:0 auto 26px;color:var(--gold)}
-      .ornament::before,.ornament::after{content:"";width:64px;border-top:1px solid #ddb16f9e}
-      .ornament span{width:8px;height:8px;border:1px solid var(--gold);transform:rotate(45deg)}
-      .mobile-save{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:11px 26px;border:1px solid #f1cf92;border-radius:100px;background:linear-gradient(130deg,#fff9e7,#f0cf90);color:#492d11;font:600 16px/1.2 'DM Sans',Arial,sans-serif;text-decoration:none;box-shadow:0 8px 28px #0003;position:relative;touch-action:manipulation}
-      .mobile-save svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-      .mobile-save:hover{background:#fff7e3}
-      .mobile-save:focus-visible{outline:3px solid #fff;outline-offset:4px}
-    }
-    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-  </style>
-</head>
-<body>
-  <h1 class="sr-only">Shubh Deepawali</h1>
-  <main>
-    <section class="desktop" aria-label="Deepawali greeting">
-      <div class="artwork">
-        <img src="/assets/diwali-blue-desktop.webp" width="1536" height="1024" fetchpriority="high" alt="An illustrated Deepawali greeting, with a man in traditional attire on the left and Shubh Deepawali wishes on a blue and gold background on the right.">
-        <a class="save-overlay" href="/contact.vcf" download="Rahul-Nahata-RSN-Group.vcf" title="Save Contact" aria-label="Save Contact: Rahul Nahata, RSN Group"></a>
-      </div>
-    </section>
-    <section class="mobile" aria-label="Mobile Deepawali greeting">
-      <div class="mobile-photo"><img src="/assets/diwali-blue-portrait.webp" width="860" height="945" alt="Cartoon illustration of a man in festive traditional clothing" fetchpriority="high"></div>
-      <div class="mobile-message">
-        <svg class="mobile-diya" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4c-7 13-10 18-10 26a10 10 0 0 0 20 0C42 22 38 17 32 4Z M8 41c4 11 13 18 24 18s20-7 24-18c-15 6-33 6-48 0Z M12 41q20 7 40 0"/></svg>
-        <h2 class="shubh">Shubh</h2>
-        <p class="deepawali">Deepawali</p>
-        <div class="ornament" aria-hidden="true"><span></span></div>
-        <a class="mobile-save" href="/contact.vcf" download="Rahul-Nahata-RSN-Group.vcf" aria-label="Save Contact: Rahul Nahata, RSN Group">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3.2"/><path d="M3 19v-2.1c0-3 2.5-5 6-5 1.8 0 3.3.5 4.4 1.5M18 14v8M14 18h8"/></svg>
-          <span>Save Contact</span>
-        </a>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#061c40"><meta name="description" content="Shubh Deepawali — warm wishes from Rahul Nahata.">
+<meta property="og:title" content="Shubh Deepawali"><meta property="og:description" content="Wishing you joy, prosperity and new beginnings this Deepawali.">
+<meta property="og:image" content="/assets/diwali-blue-desktop.webp">
+<title>Shubh Deepawali | Rahul Nahata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--navy:#061a38;--navy2:#092d60;--gold:#f5bf65;--ivory:#fff2d4}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--navy);color:var(--ivory)}
+body{font-family:"Cormorant Garamond",Georgia,serif}
+.greeting{min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#071c39}
+.panel{position:relative;width:min(100%,1600px);min-height:min(100svh,1000px);display:grid;grid-template-columns:52% 48%;overflow:hidden;background:var(--navy)}
+.portrait{position:relative;min-height:750px;overflow:hidden;background:#aa8055}
+.portrait img{position:absolute;width:195%;max-width:none;height:100%;object-fit:cover;object-position:left center;left:0;top:0}
+.portrait:after{content:"";position:absolute;right:-1px;top:0;bottom:0;width:22%;background:linear-gradient(to right,transparent,#071d40)}
+.message{position:relative;display:flex;justify-content:center;align-items:center;text-align:center;min-height:750px;padding:65px 36px;isolation:isolate;background:radial-gradient(ellipse at 45% 40%,#103666 0%,#071d40 60%,#051731 100%)}
+.message:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.26;background-image:radial-gradient(circle at 12% 30%,#e7b15c 0 1px,transparent 2px),radial-gradient(circle at 72% 60%,#ffca80 0 1px,transparent 2px);background-size:97px 97px,153px 153px}
+.inner{width:100%;max-width:620px;position:relative}
+.diya{display:block;width:70px;height:70px;margin:0 auto 12px;fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 10px #dfa63b80)}
+h1{font-weight:400;line-height:.85;margin:0;color:#fff2d8;font-size:clamp(54px,6vw,97px)}
+.deepawali{display:block;font-size:clamp(91px,9vw,159px);line-height:1.03;letter-spacing:-.055em;font-weight:500;color:var(--gold);text-shadow:0 4px 18px #f6b9563b;margin:0 auto 9px}
+.divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:7px auto 22px;color:var(--gold)}
+.divider:before,.divider:after{content:"";width:20%;height:1px;background:#dfa84995}
+.diamond{display:block;width:9px;height:9px;border:1px solid var(--gold);transform:rotate(45deg)}
+.wish{font-size:clamp(23px,2.2vw,32px);line-height:1.3;margin:0 auto 25px;color:#fff1d7;max-width:510px}
+.signature{display:flex;align-items:center;justify-content:center;gap:17px;font-size:clamp(27px,2.8vw,38px);letter-spacing:.01em;color:#f5c880;margin:0 auto 16px}
+.signature:before,.signature:after{content:"";height:1px;width:34px;background:#f1bd68}
+.contact{display:inline-flex;align-items:center;justify-content:center;gap:15px;min-height:72px;padding:11px 27px;border:2px solid #efbb62;border-radius:999px;background:#061b3b;color:white;text-decoration:none;font:500 clamp(16px,1.4vw,22px)/1.15 "DM Sans",Arial,sans-serif;box-shadow:0 0 0 3px #e5a74b17,0 12px 30px #020a16a0;transition:background .2s,transform .2s}
+.contact:hover{background:#0f3771;transform:translateY(-2px)}
+.contact:focus-visible{outline:3px solid white;outline-offset:6px}
+.contact-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:linear-gradient(140deg,#ffda90,#d49a36);color:#08234a}
+.contact-icon svg{width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.chevron{font-size:1.4em;color:#f5c16b;line-height:1}
+.hang{position:absolute;right:7%;top:0;display:flex;gap:22px;pointer-events:none;color:#e9ab46;opacity:.9}
+.hang span{display:block;font-size:34px;padding-top:66px;position:relative}
+.hang span:before{content:"";position:absolute;height:65px;width:1px;background:#daa44f;left:50%;top:0}
+.hang span:nth-child(2){padding-top:100px}.hang span:nth-child(2):before{height:99px}
+.mobile-photo{display:none}
+@media(min-width:761px) and (max-height:850px){.portrait,.message{min-height:100svh}.message{padding:30px 28px}.diya{width:49px;height:49px}h1{font-size:clamp(49px,5.5vw,72px)}.deepawali{font-size:clamp(82px,8.2vw,122px)}.wish{font-size:clamp(19px,2vw,25px);margin-bottom:13px}.divider{margin:3px auto 13px}.signature{margin-bottom:12px;font-size:29px}.contact{min-height:60px}}
+@media(max-width:760px){
+.greeting{display:block}.panel{display:block;min-height:100svh}
+.portrait{display:none}.mobile-photo{display:block;position:relative;height:min(47svh,510px);overflow:hidden;background:#b68b5b}
+.mobile-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.mobile-photo:after{content:"";position:absolute;left:0;right:0;bottom:0;height:29%;background:linear-gradient(transparent,#071d40)}
+.message{min-height:53svh;padding:13px 20px 44px}.inner{max-width:480px}
+.diya{width:43px;height:43px;margin-bottom:10px}
+h1{font-size:clamp(44px,11vw,64px)}.deepawali{font-size:clamp(75px,16.8vw,112px);margin-bottom:1px}
+.divider{margin:0 auto 13px}.wish{font-size:clamp(20px,5.4vw,27px);margin-bottom:16px}
+.signature{font-size:clamp(26px,6.5vw,34px);margin-bottom:13px}
+.contact{min-height:56px;padding:7px 16px;font-size:clamp(14px,4vw,18px);gap:10px}
+.contact-icon{width:40px;height:40px}.contact-icon svg{width:23px;height:23px}.hang{display:none}
+}
+@media(prefers-reduced-motion:reduce){.contact{transition:none}}
+</style></head>
+<body><main class="greeting"><div class="panel">
+<div class="portrait" aria-hidden="true"><img src="/assets/diwali-blue-desktop.webp" width="1536" height="1024" alt=""></div>
+<div class="mobile-photo"><img src="/assets/diwali-blue-portrait.webp" width="860" height="945" alt="Festive cartoon portrait of Rahul Nahata in traditional attire"></div>
+<section class="message" aria-label="Deepawali greeting from Rahul Nahata">
+<div class="hang" aria-hidden="true"><span>❖</span><span>❖</span></div>
+<div class="inner">
+<svg class="diya" viewBox="0 0 70 70" aria-hidden="true"><path d="M35 5c-6 10-9 15-9 22a9 9 0 0 0 18 0C44 20 40 15 35 5ZM8 41c5 14 14 21 27 21s22-7 27-21c-15 8-39 8-54 0ZM12 41q23 8 46 0M35 47v6"/></svg>
+<h1>Shubh <span class="deepawali">Deepawali</span></h1>
+<div class="divider" aria-hidden="true"><span class="diamond"></span></div>
+<p class="wish">Wishing you joy, prosperity and<br>new beginnings this Deepawali.</p>
+<p class="signature">Rahul Nahata</p>
+<a class="contact" href="/contact.vcf" download="Rahul-Nahata-RSN-Group.vcf" aria-label="Let's Stay Connected — save Rahul Nahata's RSN Group contact">
+<span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 30 30"><circle cx="11" cy="9" r="4"/><path d="M3 26v-4c0-5 3-8 8-8 2.4 0 4.6.8 6 2.2M23 17v11M17.5 22.5h11"/></svg></span>
+<span>Let's Stay Connected</span><span class="chevron" aria-hidden="true">›</span></a>
+</div></section></div></main></body></html>
