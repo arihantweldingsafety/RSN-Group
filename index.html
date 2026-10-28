@@ -66,8 +66,14 @@ h1{font-size:clamp(44px,11vw,64px)}.deepawali{font-size:clamp(75px,16.8vw,112px)
 .logo-medallion img{display:block;width:100%;height:100%;object-fit:cover}
 @media(max-height:850px) and (min-width:761px){.logo-medallion{width:75px;height:75px;margin-bottom:12px}.message{padding-top:30px;padding-bottom:24px}}
 @media(max-width:760px){.logo-medallion{width:76px;height:76px;margin-bottom:15px}}
+
+/* Top-right navigation to the RSN Group profile. */
+.about-nav{position:fixed;right:clamp(16px,3vw,45px);top:clamp(15px,3vh,32px);z-index:100;display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:11px 22px;border:1px solid #f0c57cbb;border-radius:999px;background:#071c39e6;color:#ffe6b0;text-decoration:none;font:600 12px/1 "DM Sans",Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;box-shadow:0 4px 18px #0006;backdrop-filter:blur(12px);transition:background .2s,color .2s}
+.about-nav:hover{background:#e7bb6b;color:#071c39}.about-nav:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:760px){.about-nav{right:14px;top:14px;min-height:39px;padding:9px 17px;font-size:11px}}
+
 </style></head>
-<body><main class="greeting"><div class="panel">
+<body><a class="about-nav" href="/about.html" aria-label="About RSN Group">About Us</a><main class="greeting"><div class="panel">
 <div class="portrait" aria-hidden="true"><img src="/assets/diwali-blue-desktop.webp" width="1536" height="1024" alt=""></div>
 <div class="mobile-photo"><img class="main-art" src="/assets/diwali-blue-portrait.webp" width="860" height="945" alt="Festive cartoon portrait of Rahul Nahata in traditional attire"></div>
 <section class="message" aria-label="Deepawali greeting from Rahul Nahata">
